@@ -166,7 +166,7 @@ nav {
     margin-left: 11vw;
  }
 
-strong, #subheading_span {
+#slogan, #subslogan {
     grid-area: text; 
     display: flex;
     justify-content: center;
@@ -185,10 +185,10 @@ strong, #subheading_span {
     text-shadow: 2px 2px 8px black;
 }
 
- #subheading_span > * {
+ #subslogan_span > * {
      background-color: gray;
      font-family: sans-serif;
-     font-size: large;
+     font-size: x-large;
      color: yellow;
      width: 100%;
      height: 4.375rem;
@@ -299,14 +299,14 @@ span.b {
 
 /**/
 
-.image {
+figure {
     position: relative;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.title {
+h1 {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.5);
     color: white;
@@ -508,6 +508,12 @@ p {
 
 h2 {
     margin: 1.5rem;
+    font-size: x-large;
+}
+
+h3 {
+    margin: 1.5rem;
+    font-size: large;
 }
 
 /**/
@@ -528,9 +534,9 @@ h2 {
     list-style-type: none; /* detta är för att ta bort prickarna som blir */
     width: 100%;
 }
- 
+
 #info_section h2 {
-    font-size: small;
+    font-size: large;
     margin: 5px;
 }
  
