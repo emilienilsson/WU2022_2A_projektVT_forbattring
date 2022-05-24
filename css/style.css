@@ -574,3 +574,75 @@ h3 {
     grid-area: phone;
     text-align: left;
 }
+
+/**/
+
+@media screen and (max-width: 500px) {
+
+body {
+
+}
+
+nav {
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+#nav-links {
+    width: 100%;
+    height: 540px;
+}
+
+.gridWrapper {
+    margin-left: 80px;
+}
+
+.article1 {
+    height: 15vw;
+    width: 20vw;
+}
+
+.article3 {
+    width: 22vw; /*WTF*/
+}
+
+.article4 {
+    height: 15vw;
+    width: 25vw; /*WTF*/
+    margin-left: -15px;
+}
+
+.article5 {
+    width: 20vw;
+    height: 22.5vw;
+    margin-left: -5px;
+}
+
+.article6 {
+    height: 15vw;
+    width: 38vw;
+}
+
+strong > *{
+    font-size: 3.5rem;
+   padding-right: 50px;
+   height: 60px;
+   margin-top: 130px;
+}
+
+#subslogan_span > * {
+    padding-right: 50px;
+}
+
+span.a, span.b{
+    height: 20vw;
+    width: 50vw;
+}
+
+.vertical_box > * {
+    font-size: small;
+}
+
+
+
+}
