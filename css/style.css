@@ -185,7 +185,7 @@ nav {
     text-shadow: 2px 2px 8px black;
 }
 
- #subslogan_span > * {
+ subslogan_span > * {
      background-color: gray;
      font-family: sans-serif;
      font-size: x-large;
@@ -264,7 +264,7 @@ nav {
     margin-top: 35px;
 }
 
-span.a {
+span#a {
     display: block;
     box-sizing: border-box;
     width: 25vw;
@@ -275,7 +275,7 @@ span.a {
     margin-left: 20vw;
 }
 
-span.b {
+span#b {
     display: block;
     box-sizing: border-box;
     width: 25vw;
@@ -306,8 +306,12 @@ figure {
     background-size: cover;
 }
 
+.image_title {
+    height: 88vh;
+    width: 100%;
+}
+
 h1 {
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.5);
     color: white;
     font-weight: bold;
@@ -325,7 +329,7 @@ h1 {
     text-shadow: 2px 2px 6px black;
 }
 
-#list {
+.list {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -336,7 +340,7 @@ h1 {
     font-size: 0.9375rem;
     margin-top: 100px;
 }
-#list li {
+.list li {
     margin: 5rem;
 }
 
@@ -360,7 +364,7 @@ h1 {
     box-shadow: 10px 10px;
 }
 
-.life_cycle img {
+#life_cycle img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -392,25 +396,7 @@ h1 {
     font-size: medium;
 }
 
-.text_1 {
-    display: block;
-    box-sizing: border-box;
-    margin: 2.5rem;
-    width: 280px;
-    border: 5px solid black;
-    padding: 0.9375rem;
-}
-
-.text_2 {
-    display: block;
-    box-sizing: border-box;
-    margin: 2.5rem;
-    width: 280px;
-    border: 5px solid black;
-    padding: 0.9375rem;
-}
-
-.text_3 {
+#text_1, #text_2, #text_3 {
     display: block;
     box-sizing: border-box;
     margin: 2.5rem;
@@ -463,7 +449,7 @@ h1 {
     margin-right: -450px;
 }
 
-.color {
+#color {
     display: block;
     box-sizing: border-box;
     width: 20vw;
@@ -475,7 +461,7 @@ h1 {
 }
 
 
-.picture {
+#picture_2 {
     display: block;
     box-sizing: border-box;
     width: 30vw;
@@ -485,7 +471,7 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.picture img {
+#picture_2 img {
     width: 100%;
     border-radius: 25px;
 }
@@ -579,10 +565,6 @@ h3 {
 
 @media screen and (max-width: 500px) {
 
-body {
-
-}
-
 nav {
     justify-content: flex-end;
     padding-right: 25px;
@@ -593,8 +575,15 @@ nav {
     height: 540px;
 }
 
+.hide-item {
+    visibility: collapse; 
+    display: none;
+}
+
 .gridWrapper {
     margin-left: 80px;
+    margin-top: 10%;
+    margin-bottom: 130px;
 }
 
 .article1 {
@@ -603,12 +592,12 @@ nav {
 }
 
 .article3 {
-    width: 22vw; /*WTF*/
+    width: 22vw; 
 }
 
 .article4 {
     height: 15vw;
-    width: 25vw; /*WTF*/
+    width: 25vw; 
     margin-left: -15px;
 }
 
@@ -627,22 +616,122 @@ strong > *{
     font-size: 3.5rem;
    padding-right: 50px;
    height: 60px;
-   margin-top: 130px;
 }
 
 #subslogan_span > * {
     padding-right: 50px;
 }
 
-span.a, span.b{
+#explanation_section .container > span {
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+}
+
+#life_cycle_span {
+    margin-top: -60px;
+    margin-left: 10%;
+}
+
+#sustainable_development_span {
+    margin-top: -60px;
+    margin-right: 10%;
+}
+
+span#a, span#b{
+    margin-top: -140px;
     height: 20vw;
-    width: 50vw;
+    width: 30vw;
 }
 
 .vertical_box > * {
     font-size: small;
+    margin-bottom: -100px;
 }
 
+#margin_fix {
+    margin-top: -140px;
+}
+
+#info_section {
+    margin-top: 80px;
+}
+
+/**/
+
+.image_title {
+    height: fit-content;
+}
+
+.list {
+    padding: 0.1rem;
+    margin-top: 40px;
+}
+
+h1 {
+    margin-top: -100px;
+    z-index: 0;
+    width: 60%;
+}
+
+.margin {
+    margin-top: -30px;
+}
+
+p {
+    letter-spacing: 0.0005rem;
+    word-spacing: 0.0005rem;
+}
+
+#life_cycle img {
+    width: 50vw;
+    height: 30vh;
+    margin-bottom: 60px;
+    margin-top: -30px;
+}
+
+/**/
+
+#picture {
+    width: 70vw;
+    height: 40vh;
+}
+
+.vertical_text {
+    display: table-row;
+}
+
+#text_1, #text_2, #text_3 {
+    margin-left: 115px;
+}
+
+/**/
+
+#picture_2 {
+    height: 60vh;
+    width: 60vw;
+}
+
+#color {
+    height: 25vh;
+    width: 40vw;
+}
+
+.vertical_picture_1 {
+    margin-bottom: 120px;
+}
+
+.vertical_picture_1 > *:last-child {
+    margin-top: 220px;
+    margin-left: 320px;
+}
+
+.vertical_picture_2 > *:last-child {
+    margin-top: 220px;
+    margin-right: -130px;
+}
+
+/**/
 
 
 }
