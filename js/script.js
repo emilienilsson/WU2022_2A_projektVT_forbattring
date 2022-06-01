@@ -1,6 +1,6 @@
 const nav = document.getElementById("nav-links")
 const burger = document.getElementById("burger")
-const main = document.getElementById("??")
+const main = document.getElementById("hide")
  
 function toggleMenu() {
     nav.classList.toggle("nav-active")
